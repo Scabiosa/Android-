@@ -136,3 +136,34 @@ WindowManager: Changing focus from Window{82e5f30 u0 NotificationShade} to Windo
 #### 4、EventLog
 
 https://juejin.cn/post/7231081485318537274#heading-17
+
+
+
+#### 5、内存信息MEMINFO
+
+```txt
+** MEMINFO in pid 517 [com.miui.gallery] **
+                   Pss      Pss   Shared  Private   Shared  Private  SwapPss      Rss     Heap     Heap     Heap
+                 Total    Clean    Dirty    Dirty    Clean    Clean    Dirty    Total     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------   ------   ------   ------   ------
+  Native Heap    66399        0     1276    65112      280     1260   154190    67928   245100   221714    23385
+  Dalvik Heap   132662        0     1740   132588     4412        0     1533   138740   233590   135286    98304
+ Dalvik Other    11074        0     6564     7236       44      772      228    14616                           
+        Stack     2384        0       12     2296        0       88     3132     2396                           
+       Ashmem       10        0      360        0       48        0        0      408                           
+      Gfx dev      532        0        0      532        0        0        0      532                           
+    Other dev       17        0      520        0        0       16        0      536                           
+     .so mmap     2636     1192     1676      328    35340     1192     2676    38536                           
+    .jar mmap      957        0        0        0    27928        0        0    27928                           
+    .apk mmap     1762     1292        0        0     1900     1292        0     3192                           
+    .ttf mmap     1321        0        0        0    11372        0        0    11372                           
+    .dex mmap    13758    13544        4       24     1576    13544       32    15148                           
+    .oat mmap      268        0       40        0    13228        0        0    13268                           
+    .art mmap     3974       28    16408     3672     2612       28       89    22720                           
+   Other mmap       72        0       24        8     1040       32        0     1104                           
+      Unknown      934        0      324      660      216      272      913     1472                           
+        TOTAL   401553    16056    28948   212456    99996    18496   162793   359896   478690   357000   121689
+
+单位KB
+```
+
